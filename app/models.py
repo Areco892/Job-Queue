@@ -4,11 +4,13 @@ from enum import Enum
 from typing import Any
 from uuid import uuid4
 
+
 class JobStatus(str, Enum):
     PENDING = "pending"
     IN_PROGRESS = "in_progress"
     COMPLETED = "completed"
     FAILED = "failed"
+
 
 @dataclass
 class Job:
